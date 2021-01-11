@@ -5,12 +5,10 @@
     "license": "Copyright © 1998 - 2021 Tencent. All Rights Reserved.",
     "url": "https://down.qq.com/qqweb/PCQQ/PCQQ_EXE/PCQQ2020.exe#/dl.7z",
     "hash": "f557e33d6f8b88cf8550dcf51c20bbfe19fcdfda97eb305723f9045db6ede8fd",
-    "installer": {
-        "script": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse -Force"
-    },
     "shortcuts": [
         [
             "qq.exe",
+            "bin",
             "QQ"
         ]
     ],

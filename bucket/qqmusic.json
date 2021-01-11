@@ -5,9 +5,6 @@
     "license": "Copyright © 1998 - 2021 Tencent. All Rights Reserved.",
     "url": "https://dldir1.qq.com/music/clntupate/QQMusic_YQQWinPCDL.exe#/dl.7z",
     "hash": "da45ae9db852420407177dfbdc1f350c3071d8c3a063a730855782a1ce0eccf6",
-    "installer": {
-        "script": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse -Force"
-    },
     "shortcuts": [
         [
             "QQMusic.exe",
