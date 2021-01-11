@@ -1,27 +1,24 @@
 {
-    "homepage": "https://pan.baidu.com/",
+    "homepage": "https://pan.baidu.com",
     "description": "让美好永远陪伴",
-    "license": {
-        "identifier": "©2021 Baidu",
-        "url": "http://yun.baidu.com/disk/duty/"
-    },
     "version": "7.0.13",
+    "license": "© 2021 Baidu",
     "url": "https://issuecdn.baidupcs.com/issue/netdisk/yunguanjia/BaiduNetdisk_7.0.13.2.exe#/dl.7z",
     "hash": "9b4a07ea200d2c8787ecd8c61d00688b8b109625f73e6c77eb2098fd68e919da",
-    "checkver": {
-        "regex": "BaiduNetdisk_([\\d.]+).exe"
-    },
     "installer": {
         "script": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse -Force"
     },
-    "autoupdate": {
-        "url": "https://issuecdn.baidupcs.com/issue/netdisk/yunguanjia/BaiduNetdisk_$version.exe#/dl.7z"
-    },
-    "bin": "BaiduNetdisk.exe",
     "shortcuts": [
         [
             "BaiduNetdisk.exe",
-            "BaiduNetdisk"
+            "Baidu Netdisk"
         ]
-    ]
+    ],
+    "checkver": {
+        "url": "https://pan.baidu.com/download",
+        "regex": "<p class=\"clint-info\">版本：百度网盘PC版V([\\d.]+)</p>"
+    },
+    "autoupdate": {
+        "url": "https://issuecdn.baidupcs.com/issue/netdisk/yunguanjia/BaiduNetdisk_$version.2.exe#/dl.7z"
+    }
 }
