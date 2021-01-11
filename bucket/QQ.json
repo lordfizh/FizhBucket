@@ -1,0 +1,21 @@
+{
+    "homepage": "https://im.qq.com",
+    "description": "I'm QQ - 每一天，乐在沟通",
+    "version": "9.4.2",
+    "license": "Copyright © 1998 - 2021 Tencent. All Rights Reserved.",
+    "url": "https://down.qq.com/qqweb/PCQQ/PCQQ_EXE/PCQQ2020.exe#/dl.7z",
+    "hash": "f557e33d6f8b88cf8550dcf51c20bbfe19fcdfda97eb305723f9045db6ede8fd",
+    "shortcuts": [
+        [
+            "Files\\Bin\\QQ.exe",
+            "QQ"
+        ]
+    ],
+    "checkver": {
+        "url": "https://im.qq.com/download",
+        "regex": "<em class=\"dver justword\" id=\"imedit_justword_pctab\">([\\d.]+)<sup>"
+    },
+    "autoupdate": {
+        "url": "https://down.qq.com/qqweb/PCQQ/PCQQ_EXE/PCQQ2020.exe#/dl.7z"
+    }
+}

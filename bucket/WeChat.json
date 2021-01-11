@@ -1,0 +1,21 @@
+{
+    "homepage": "https://weixin.qq.com",
+    "description": "微信，是一个生活方式",
+    "version": "3.1.0",
+    "license": "© 1998 - 2021 Tencent Inc. All Rights Reserved",
+    "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe#/dl.7z",
+    "hash": "11d259be4fb27b480898a230b66e1d5bafd1de62dfecba4bc02d2e6b3efb3214",
+    "shortcuts": [
+        [
+            "wechat.exe",
+            "WeChat"
+        ]
+    ],
+    "checkver": {
+        "url": "https://weixin.qq.com",
+        "regex": "微信 ([\\d.]+) for Windows 发布"
+    },
+    "autoupdate": {
+        "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe#/dl.7z"
+    }
+}
