@@ -3,8 +3,12 @@
     "description": "QQ音乐，听我想听的歌",
     "version": "18.03.0",
     "license": "Copyright © 1998 - 2021 Tencent. All Rights Reserved.",
-    "url": "https://dldir1.qq.com/music/clntupate/QQMusic_YQQWinPCDL.exe#/dl.7z",
-    "hash": "da45ae9db852420407177dfbdc1f350c3071d8c3a063a730855782a1ce0eccf6",
+    "url": "https://dldir1.qq.com/music/clntupate/QQMusic_YQQWinPCDL.exe#/QQMusic.exe",
+    "hash": "d0ad6bb8295ddf27b8be0cc07c3f2c0a8e7de79c629a03401e4609c4e81544e2",
+    "installer": {
+        "script": "Start-Process -Wait $dir\\QQMusic.exe /i",
+        "keep": true
+    },
     "shortcuts": [
         [
             "QQMusic.exe",
@@ -16,6 +20,6 @@
         "regex": "Windows PC <span class=\"product_list__version\">最新版:([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://dldir1.qq.com/music/clntupate/QQMusic_YQQWinPCDL.exe#/dl.7z"
+        "url": "https://dldir1.qq.com/music/clntupate/QQMusic_YQQWinPCDL.exe#/QQMusic.exe"
     }
 }
