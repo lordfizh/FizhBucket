@@ -1,0 +1,21 @@
+{
+    "homepage": "https://tim.qq.com/",
+    "description": "QQ办公简洁版",
+    "version": "3.3.0",
+    "license": "Copyright © 1998 - 2021 Tencent. All Rights Reserved.",
+    "url": "https://dldir1.qq.com/qqfile/qq/PCTIM/TIM3.3.0/TIM3.3.0.22020.exe#/dl.7z",
+    "hash": "3d6165b9fd0668ddd335d177f4c2b6abbabbb273d03c0d9161014e6eb5cb72ce",
+    "shortcuts": [
+        [
+            "Files\\Bin\\QQ.exe",
+            "QQ"
+        ]
+    ],
+    "checkver": {
+        "url": "https://tim.qq.com/download.html",
+        "regex": "<a href=\"https://dldir1.qq.com/qqfile/qq/PCTIM/TIM([\\d.]+)/TIM(?<suffix>\\S+).exe\" onclick=\"tcssReport('tim.downloads.windows');\" id=\"downloadWin\">下载</a>"
+    },
+    "autoupdate": {
+        "url": "https://dldir1.qq.com/qqfile/qq/PCTIM/TIM$version/TIM$matchSuffix.exe#/dl.7z"
+    }
+}
