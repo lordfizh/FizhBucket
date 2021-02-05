@@ -3,10 +3,13 @@
     "description": "(IDM) is a tool to increase download speeds by up to 5 times, resume and schedule downloads.",
     "version": "638build16",
     "license": "© ToneC",
-    "url": "https://www.tonec.com/download/idman638build16.exe?b=1&filename=idman638build16.exe#/idman.exe",
+    "url": "https://www.tonec.com/download/idman638build16.exe?b=1&filename=idman638build16.exe#/idman-install.exe",
     "hash": "1cb612cc732ba86ac5b99b7c3043eacc6e2be4be159d82f9f80353610dcdc13b",
     "installer": {
-        "script": "Start-Process -Wait $dir\\idman.exe /i",
+        "script": [
+            "Start-Process -Wait $dir\\idman-install.exe /i",
+            "Remove-Item \"$dir\\Qidman-install.exe\" -Recurse -Force"
+        ],
         "keep": true
     },
     "shortcuts": [
@@ -20,6 +23,6 @@
         "regex": "<li class=\"style12\">Run idman(\\S+).exe </li>"
     },
     "autoupdate": {
-        "url": "https://www.tonec.com/download/idman$version.exe?b=1&filename=idman$version.exe/idman.exe"
+        "url": "https://www.tonec.com/download/idman$version.exe?b=1&filename=idman$version.exe/idman-install.exe"
     }
 }
