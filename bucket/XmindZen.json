@@ -1,0 +1,47 @@
+{
+    "homepage": "https://www.xmind.net/",
+    "version": "2021.01.07",
+    "license": "© 2021 XMind Ltd.",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.xmind.net/zen/download/win64/#/dl.7z",
+            "hash": "6fd240b6127999f40cdb4c988131dc3318dbfcce5d2f2ceeef19a5005d247bf8",
+            "installer": {
+                "script": [
+                    "Expand-7ZipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\" -Removal",
+                    "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse"
+                ]
+            }
+        },
+        "32bit": {
+            "url": "https://www.xmind.net/zen/download/win32/#/dl.7z",
+            "hash": "2a0893610ce3bf5c15af81b832c3d5ec403059f35c523a3a19fcb67bd8878817",
+            "installer": {
+                "script": [
+                    "Expand-7ZipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\" -Removal",
+                    "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse"
+                ]
+            }
+        }
+    },
+    "shortcuts": [
+        [
+            "XMind.exe",
+            "XMind 2020"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.xmind.net/xmind2020/release-notes/",
+        "regex": "<div class=\"container\"><header class=\"page-header\"><h1 class=\"page-title\">XMind Release Notes</h1></header><div><h3 class=\"mt-5 mb-1\">(?<title>\\S+)</h3><h5 class=\"text-muted\">([\\d.]+)</h5>"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.xmind.net/zen/download/win64/#/dl.7z"
+            },
+            "32bit": {
+                "url": "https://www.xmind.net/zen/download/win32/#/dl.7z"
+            }
+        }
+    }
+}
