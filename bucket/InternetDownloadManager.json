@@ -8,13 +8,13 @@
     "installer": {
         "script": [
             "Start-Process -Wait $dir\\idman-install.exe /i",
-            "Remove-Item \"$dir\\Qidman-install.exe\" -Recurse -Force"
+            "Remove-Item \"$dir\\idman-install.exe\" -Recurse -Force"
         ],
         "keep": true
     },
     "shortcuts": [
         [
-            "IDMan.exe",
+            "Internet Download Manager\\IDMan.exe",
             "Internet Download Manager"
         ]
     ],
