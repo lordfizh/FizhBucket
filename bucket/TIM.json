@@ -7,7 +7,7 @@
     "hash": "3d6165b9fd0668ddd335d177f4c2b6abbabbb273d03c0d9161014e6eb5cb72ce",
     "installer": {
         "script": [
-            "Invoke-ExternalCommand \"$dir\\TIM-install.exe\" -ArgumentList @('/install','/S',\"/D=$dir\") -RunAs | Out-Null",
+            "Start-Process -Wait $dir\\TIM-install.exe /i",
             "Remove-Item \"$dir\\TIM-install.exe\" -Recurse -Force"
         ],
         "keep": true

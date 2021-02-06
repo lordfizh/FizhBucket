@@ -7,7 +7,7 @@
     "hash": "3d80d57762a8879cf09cb2ae18a3369ade3f98faab89387b1b75302d9449da0c",
     "installer": {
         "script": [
-            "Invoke-ExternalCommand \"$dir\\WPS-install.exe\" -ArgumentList @('/install','/S',\"/D=$dir\") -RunAs | Out-Null",
+            "Start-Process -Wait $dir\\WPS-install.exe /i",
             "Remove-Item \"$dir\\WPS-install.exe\" -Recurse -Force"
         ],
         "keep": true
