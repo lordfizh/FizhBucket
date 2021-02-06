@@ -4,7 +4,7 @@
     "version": "18.03.0",
     "license": "Copyright © 1998 - 2021 Tencent. All Rights Reserved.",
     "url": "https://dldir1.qq.com/music/clntupate/QQMusic_YQQWinPCDL.exe#/QQMusic-install.exe",
-    "hash": "d0ad6bb8295ddf27b8be0cc07c3f2c0a8e7de79c629a03401e4609c4e81544e2",
+    "hash": "da45ae9db852420407177dfbdc1f350c3071d8c3a063a730855782a1ce0eccf6",
     "installer": {
         "script": [
             "Start-Process -Wait $dir\\QQMusic-install.exe /i",
