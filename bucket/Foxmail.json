@@ -1,0 +1,24 @@
+{
+    "homepage": "https://www.foxmail.com",
+    "description": "Foxmail like you've never seen it before.",
+    "version": "7.2.20",
+    "license": "© 1998 - 2021 Tencent Inc. All rights reserved.",
+    "url": "https://www.foxmail.com/win/download#/dl.7z",
+    "hash": "d2367e203c2ed11256bc007dd644951d5564b083664b5f3241dc4097ebae1c7e",
+    "installer": {
+        "script": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse -Force"
+    },
+    "shortcuts": [
+        [
+            "Foxmail.exe",
+            "Foxmail"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.foxmail.com",
+        "regex": "<span>Latest Version: Foxmail ([\\d.]+) ("
+    },
+    "autoupdate": {
+        "url": "https://www.foxmail.com/win/download#/dl.7z"
+    }
+}
