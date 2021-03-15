@@ -1,10 +1,10 @@
 {
     "homepage": "https://pan.baidu.com",
     "description": "让美好永远陪伴",
-    "version": "7.1.1.2",
+    "version": "7.2.5.1",
     "license": "© 2021 Baidu",
-    "url": "https://issuecdn.baidupcs.com/issue/netdisk/yunguanjia/BaiduNetdisk_7.1.1.2.exe#/dl.7z",
-    "hash": "961fdebe3279fe88369ccc5e3d9270831f47845129f9b9295374003e9a18e5d4",
+    "url": "https://issuecdn.baidupcs.com/issue/netdisk/yunguanjia/BaiduNetdisk_7.2.5.1.exe#/dl.7z",
+    "hash": "b61274630a95a99b3fdf64035e9ec6e97ad3d5597eff942a3c18a6fd2fb48473",
     "installer": {
         "script": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse -Force"
     },
