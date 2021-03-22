@@ -1,12 +1,12 @@
 {
     "homepage": "https://github.com/sandboxie-plus/Sandboxie",
     "description": "Sandboxie is a sandbox-based isolation software for 32- and 64-bit Windows NT-based operating systems.",
-    "version": "0.6.7",
+    "version": "0.7.2",
     "license": "GPL-3.0 License",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/0.6.7/Sandboxie-Plus-x64-v0.6.7.exe#/Sandboxie-install.exe",
-            "hash": "f0cd788d46dfd5d0d667b47e0f927670f5de4497bae64ba7498c36b3275aa76f",
+            "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/0.7.2/Sandboxie-Plus-x64-v0.7.2.exe#/Sandboxie-install.exe",
+            "hash": "7ee710c0182215b2c8c51f39708e7c83f63cb08183bc55a8b71f8c9351de6678",
             "installer": {
                 "script": [
                     "Invoke-ExternalCommand \"$dir\\Sandboxie-install.exe\" -ArgumentList @('/install','/S',\"/D=$dir\") -RunAs | Out-Null",
@@ -21,8 +21,8 @@
             }
         },
         "32bit": {
-            "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/0.6.7/Sandboxie-Plus-x86-v0.6.7.exe#/Sandboxie-install.exe",
-            "hash": "a4126a9924bfc8bb9217c765e04077c2f835b107d7ed8711c298504f8955e7ae",
+            "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/0.7.2/Sandboxie-Plus-x86-v0.7.2.exe#/Sandboxie-install.exe",
+            "hash": "d7fcfea4ccc5bee7e39e3ba3e0d9bd777f079b3b269342e6d84394e1e94178bd",
             "installer": {
                 "script": [
                     "Invoke-ExternalCommand \"$dir\\Sandboxie-install.exe\" -ArgumentList @('/install','/S',\"/D=$dir\") -RunAs | Out-Null",
