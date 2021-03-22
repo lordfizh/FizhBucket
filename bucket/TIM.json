@@ -1,10 +1,10 @@
 {
     "homepage": "https://tim.qq.com/",
     "description": "QQ简约办公版",
-    "version": "3.3.0",
+    "version": "3.3.5.22018",
     "license": "Copyright © 1998 - 2021 Tencent. All Rights Reserved.",
-    "url": "https://dldir1.qq.com/qqfile/qq/PCTIM/TIM3.3.0/TIM3.3.0.22020.exe#/TIM-install.exe",
-    "hash": "3d6165b9fd0668ddd335d177f4c2b6abbabbb273d03c0d9161014e6eb5cb72ce",
+    "url": "https://dl.softmgr.qq.com/original/im/TIM3.3.5.22018.exe#/TIM-install.exe",
+    "hash": "d7d815d93c53047282d8055a5fbe1ed589ad90f64ed7cd57bbb5364e6ddf06f9",
     "installer": {
         "script": [
             "Start-Process -Wait $dir\\TIM-install.exe /i",
@@ -19,10 +19,10 @@
         ]
     ],
     "checkver": {
-        "url": "https://tim.qq.com/download.html",
-        "regex": "<a href=\"https://dldir1.qq.com/qqfile/qq/PCTIM/TIM([\\d.]+)/TIM(?<suffix>\\S+).exe\" onclick=\"tcssReport('tim.downloads.windows');\" id=\"downloadWin\">下载</a>"
+        "url": "https://tim.qq.com/support.html",
+        "regex": "/TIM([\\d.]+).exe\" onclick=\"tcssReport('tim.downloads.windows');\" id=\"downloadWin\">下载</a>"
     },
     "autoupdate": {
-        "url": "https://dldir1.qq.com/qqfile/qq/PCTIM/TIM$version/TIM$matchSuffix.exe#/TIM-install.exe"
+        "url": "https://dl.softmgr.qq.com/original/im/TIM$version.exe#/TIM-install.exe"
     }
 }

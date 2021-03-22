@@ -15,8 +15,8 @@
         ]
     ],
     "checkver": {
-        "url": "https://www.foxmail.com",
-        "regex": "<span>Latest Version: Foxmail ([\\d.]+) ("
+        "url": "https://pc.qq.com/search.html#!keyword=foxmail",
+        "regex": "Foxmail ([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://www.foxmail.com/win/download#/dl.7z"

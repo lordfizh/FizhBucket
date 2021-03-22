@@ -1,6 +1,6 @@
 {
     "homepage": "https://www.xmind.net/",
-    "version": "2021.01.07",
+    "version": "10.3.1",
     "license": "© 2021 XMind Ltd.",
     "architecture": {
         "64bit": {
@@ -29,19 +29,5 @@
             "XMind.exe",
             "XMind 2020"
         ]
-    ],
-    "checkver": {
-        "url": "https://www.xmind.net/xmind2020/release-notes/",
-        "regex": "<div class=\"container\"><header class=\"page-header\"><h1 class=\"page-title\">XMind Release Notes</h1></header><div><h3 class=\"mt-5 mb-1\">(?<title>\\S+)</h3><h5 class=\"text-muted\">([\\d.]+)</h5>"
-    },
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://www.xmind.net/zen/download/win64/#/dl.7z"
-            },
-            "32bit": {
-                "url": "https://www.xmind.net/zen/download/win32/#/dl.7z"
-            }
-        }
-    }
+    ]
 }

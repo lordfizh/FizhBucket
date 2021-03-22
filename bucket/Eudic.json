@@ -1,10 +1,10 @@
 {
     "homepage": "https://www.eudic.net/",
     "description": "权威的英语词典软件 英语学习者必备的工具",
-    "version": "12.15",
+    "version": "12.5.0",
     "license": "Copyright © 2021 欧路软件",
     "url": "https://www.eudic.net/download/eudic_win.zip",
-    "hash": "81082eb9fdc179787fa60abaa150a6afc9f1833d870b9b940087e1ceafa997c9",
+    "hash": "f82411f12f8da3b47831dc4cf0b9fe70910305b8cada01e66d34938f705b6e71",
     "installer": {
         "script": [
             "Start-Process -Wait $dir\\eudic_win.exe /i",
@@ -19,8 +19,8 @@
         ]
     ],
     "checkver": {
-        "url": "https://www.eudic.net/v4/en/app/history?appkey=eusoft_eudic_en",
-        "regex": "<div class=\"commonDivLeft\"><div class=\"left_span1\">New</div><div class=\"left_span2\"><span>(?<year>\\[\\d.]+)</span><br><span>([\\d.]+)</span>"
+        "url": "https://baoku.360.cn/soft/show/appid/103187959",
+        "regex": "<dl><dt>软件版本：</dt><dd>([\\d.]+)</dd></dl>"
     },
     "autoupdate": {
         "url": "https://www.eudic.net/download/eudic_win.zip"

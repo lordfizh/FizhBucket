@@ -17,12 +17,5 @@
             "WPS Office\\ksolaunch.exe",
             "WPS"
         ]
-    ],
-    "checkver": {
-        "url": "https://pc.wps.cn/",
-        "regex": "<a href=\"https://pacakge.cache.wpscdn.cn/wps/download/W.P.S.(?<suffix>\\S+).exe\" target=\"_blank\" onclick=\"_czc.push(['_trackEvent', 'wps2019顶部banner', '点击', '免费下载']);\" class=\"banner_btn blue_btn\">免费下载</a><p class=\"verson_txt\">([\\d.]+)/(?<date>\\S+)</p>"
-    },
-    "autoupdate": {
-        "url": "https://pacakge.cache.wpscdn.cn/wps/download/W.P.S.$matchSuffix.exe#/WPS-install.exe"
-    }
+    ]
 }
