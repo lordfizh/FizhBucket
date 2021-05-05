@@ -1,10 +1,10 @@
 {
     "homepage": "http://www.internetdownloadmanager.com",
     "description": "(IDM) is a tool to increase download speeds by up to 5 times, resume and schedule downloads.",
-    "version": "638build22",
+    "version": "638build23",
     "license": "© ToneC",
-    "url": "https://www.tonec.com/download/idman638build22.exe?b=1&filename=idman638build22.exe/idman-install.exe",
-    "hash": "d1b35093012c35102c90d2c4ec696d385a18f78ec56e7d61c0ebe8bb08a2803b",
+    "url": "https://www.tonec.com/download/idman638build23.exe?b=1&filename=idman638build23.exe/idman-install.exe",
+    "hash": "80bcaa3d882b1ca1db100aa3a43f568217b816e5066aba70c3a07569cc659b10",
     "installer": {
         "script": [
             "Start-Process -Wait $dir\\idman-install.exe /i",
