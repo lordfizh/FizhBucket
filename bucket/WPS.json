@@ -4,7 +4,7 @@
     "version": "2021.08.05",
     "license": "Copyright © 2008-2021 Kingsoft Office, All Rights Reserved.",
     "url": "https://platform.wps.cn/download/query?os=windows&os_version=windows10",
-    "hash": "3d80d57762a8879cf09cb2ae18a3369ade3f98faab89387b1b75302d9449da0c",
+    "hash": "27d8e9b2152fc3172e41e6ff0c826bee9781e4e4d7ebe5bb7ec08abda8a380c0",
     "installer": {
         "script": [
             "Start-Process -Wait $dir\\W.P.S.*.exe /i",
