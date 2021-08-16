@@ -1,14 +1,14 @@
 {
-    "homepage": "https://pc.wps.cn/",
-    "description": "简单创造不简单",
-    "version": "11.1.0.10314",
+    "homepage": "https://www.wps.cn",
+    "description": "WPS Office，让你高效解决办公问题",
+    "version": "2021.08.05",
     "license": "Copyright © 2008-2021 Kingsoft Office, All Rights Reserved.",
-    "url": "https://pacakge.cache.wpscdn.cn/wps/download/W.P.S.10314.12012.2019.exe#/WPS-install.exe",
+    "url": "https://platform.wps.cn/download/query?os=windows&os_version=windows10",
     "hash": "3d80d57762a8879cf09cb2ae18a3369ade3f98faab89387b1b75302d9449da0c",
     "installer": {
         "script": [
-            "Start-Process -Wait $dir\\WPS-install.exe /i",
-            "Remove-Item \"$dir\\WPS-install.exe\" -Recurse -Force"
+            "Start-Process -Wait $dir\\W.P.S.*.exe /i",
+            "Remove-Item \"$dir\\W.P.S.*.exe\" -Recurse -Force"
         ],
         "keep": true
     },
@@ -17,5 +17,13 @@
             "WPS Office\\ksolaunch.exe",
             "WPS"
         ]
-    ]
+    ],
+    "checkver": {
+        "url": "https://platform.wps.cn/",
+        "regex": "<div class=\"system\">Window 版本</div><div class=\"desc\">([\\d.]+) 更新"
+    },
+    "autoupdate": {
+        "url": "https://platform.wps.cn/download/query?os=windows&os_version=windows10"
+    }
 }
+
