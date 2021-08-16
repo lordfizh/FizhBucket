@@ -6,7 +6,11 @@
     "url": "https://d1.music.126.net/dmusic/cloudmusicsetup2.9.1.199099.exe#/Cloudmusic-install.exe",
     "hash": "e4a71ed1385dd187d8b3a703f0d02bc151910361c52e281b82da93afef3e1d1d",
     "installer": {
-        "script": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse -Force"
+        "script": [
+            "Start-Process -Wait $dir\\Cloudmusic-install.exe /i",
+            "Remove-Item \"$dir\\Cloudmusic-install.exe\" -Recurse -Force"
+        ],
+        "keep": true
     },
     "shortcuts": [
         [
