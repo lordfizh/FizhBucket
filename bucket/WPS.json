@@ -3,12 +3,12 @@
     "description": "WPS Office，让你高效解决办公问题",
     "version": "2021.08.05",
     "license": "Copyright © 2008-2021 Kingsoft Office, All Rights Reserved.",
-    "url": "https://platform.wps.cn/download/query?os=windows&os_version=windows10",
+    "url": "https://platform.wps.cn/download/query?os=windows&os_version=windows10#/WPS-Install.exe",
     "hash": "27d8e9b2152fc3172e41e6ff0c826bee9781e4e4d7ebe5bb7ec08abda8a380c0",
     "installer": {
         "script": [
-            "Start-Process -Wait $dir\\W.P.S.*.exe /i",
-            "Remove-Item \"$dir\\W.P.S.*.exe\" -Recurse -Force"
+            "Start-Process -Wait $dir\\WPS-Install.exe /i",
+            "Remove-Item \"$dir\\WPS-Install.exe\" -Recurse -Force"
         ],
         "keep": true
     },
@@ -23,7 +23,7 @@
         "regex": "<div class=\"system\">Window 版本</div><div class=\"desc\">([\\d.]+) 更新"
     },
     "autoupdate": {
-        "url": "https://platform.wps.cn/download/query?os=windows&os_version=windows10"
+        "url": "https://platform.wps.cn/download/query?os=windows&os_version=windows10#/WPS-Install.exe"
     }
 }
 
