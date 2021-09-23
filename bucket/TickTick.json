@@ -1,0 +1,28 @@
+{
+    "homepage": "https://www.dida365.com",
+    "description": "达成更多，用心生活",
+    "version": "4.0.3.0",
+    "license": "© 2021 杭州随笔记网络技术有限公司",
+    "url": "https://dida365.com/static/getApp/download?type=win64#/Dida-Install.exe",
+    "hash": "b082279021e11d87b83688894dc88353d341f8f9d515a5ecd095af00d04b2aac",
+    "installer": {
+        "script": [
+            "Start-Process -Wait $dir\\Dida-Install.exe /i",
+            "Remove-Item \"$dir\\Dida-Install.exe\" -Recurse -Force"
+        ],
+        "keep": true
+    },
+    "shortcuts": [
+        [
+            "TickTick.exe",
+            "TickTick"
+        ]
+    ],
+    "checkver": {
+        "url": "https://pc.qq.com/detail/6/detail_26526.html",
+        "regex": "<li>版本：([\\d.]+)</li>"
+    },
+    "autoupdate": {
+        "url": "https://dida365.com/static/getApp/download?type=win64#/Dida-Install.exe"
+    }
+}
