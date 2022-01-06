@@ -1,10 +1,10 @@
 {
     "homepage": "https://y.qq.com",
     "description": "QQ音乐，听我想听的歌",
-    "version": "18.44.0",
+    "version": "18.47.0",
     "license": "Copyright © 1998 - 2021 Tencent. All Rights Reserved.",
     "url": "https://dldir1.qq.com/music/clntupate/QQMusic_YQQWinPCDL.exe#/QQMusic-install.exe",
-    "hash": "5c51bed806abfc3c29ba6bcf92a9636bd9d1df81d36168582e7fecf55ba2716f",
+    "hash": "eedc7e92568234d98dbed84ddeee6775ee391358cb01eff5269525cbafd18e37",
     "installer": {
         "script": [
             "Start-Process -Wait $dir\\QQMusic-install.exe /i",
