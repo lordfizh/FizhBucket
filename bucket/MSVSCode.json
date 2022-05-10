@@ -1,5 +1,5 @@
 {
-    "version": "1.67.0",
+    "version": "1.67.1",
     "description": "Code editing.Redefined.",
     "homepage": "https://code.visualstudio.com/",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://update.code.visualstudio.com/1.67.0/win32-x64-user/stable#/VSCode-Install.exe",
-            "hash": "9d3eb1b6d72ff0b925b524c284bdc980c9f15e29da0b630432e664d76f667bbf"
+            "url": "https://update.code.visualstudio.com/1.67.1/win32-x64-user/stable#/VSCode-Install.exe",
+            "hash": "26aa4a40b983dd0a7953c018a46d60f32fdb1c7a39488fc30c157fa245ff0504"
         }
     },
     "installer": {
